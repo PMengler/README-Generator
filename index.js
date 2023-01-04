@@ -6,51 +6,67 @@ const fs = require('fs');
 // TODO: Create an array of questions for user input
 // Questions need work
 const questions = [
-    {
+    {   // project title
         type: 'input',
         message: "what would you like the title of this README file to be?",
         name: 'title',
     },
-    {
+    {   // description
         type: 'input',
-        message: 'Please describe the nature of this project.',
+        message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide: What was your motivation? Why did you build this project? What problem does it solve? What did you learn?',
         name: 'description',
     },
-    {   // question for technologies used
+    {   // installation
         type: 'input',
-        message: 'What kinds of technologies were used in the creation of this ReadME Generator?',
-        name: 'technology',
+        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+        name: 'installation',
     },
-    {
-        type: 'input',
-        message: 'What is the User Story for this assignment?',
-        name: 'userStory',
-    },
-    {
-        type: 'rawList', // not sure if this is the right syntax, want it to be user input but in list form
-        message: 'What are the acceptance criteria for this assignment?',
-        name: 'acceptanceCriteria',
-    },
-    {   // usage question
+    {   // usage
         type: 'input',
         message: 'How would you describe to the user the instructions for usage of this project?',
         name: 'usage',
+    },
+    {   // deployment
+        type: 'input',
+        message: 'How is this project deployed?',
+        name: 'deployment',
     },
     {   // question for screenshot url
         type: 'input',
         message: 'What is the image location of your ReadME Generator screenshot?',
         name: 'screenShot',
     },
+    {   // link to walkthrough video
+        type: 'input',
+        message: 'Please provide the link to your walkthrough video.',
+        name: 'video',
+    },
+    {   // contributing
+        type: 'input',
+        message: 'Who can contribute to this project? How do they go about doing so?',
+        name: 'contributing',
+    },
+    {   // tests
+        type: 'input',
+        message: 'What kind of testing did you perform on this project?',
+        name: 'testing',
+    },
     {   // question for link to github repo
         type: 'input',
-        message: 'What is the link to your GitHub Repository for this project?',
+        message: 'What is your GitHub username?',
         name: 'gitHub',
     },
-    // {   // is there a deployed application for this assignment?
-    //     type: '',
-    //     message: '',
-    //     name: '',
-    // },
+    {   // email address
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
+    },
+    {   // license
+        type: 'checkbox',
+        message: 'What is the license of this project?',
+        name: 'license',
+        choices: ["MIT", "Apache-2.0", "BSD-3-Clause"],
+    },
 ];
 
 // TODO: Create a function to write README file
@@ -61,29 +77,19 @@ function writeToFile(answers) {
     ## Description
     
     ${answers.description}
-    Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-    
-    - What was your motivation?
-    - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-    - What problem does it solve?
-    - What did you learn?
 
-    ## Technology Used
+    ## Table of Contents
 
-    ${answers.technology}
-    
-    ## User Story
-
-    ${answers.userStory}
-
-    ## Acceptance Criteria
-
-    ${answers.acceptanceCriteria}
+    - Installation
+    - Usage
+    - Contributing
+    - Tests
+    - Questions
+    - License
 
     ## Installation
     
-    {answers.installation}
-    What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+    ${answers.installation}
     
     ## Usage
     
@@ -95,39 +101,36 @@ function writeToFile(answers) {
     
         md
         ![alt text](${answers.screenShot})
-    
-    ## Credits
-    
-    {answers.credits};
 
+        ${answers.video}
+
+    ## Contributing
+
+    ${answers.contributing}
+
+
+    ## Testing
+
+    ${answers.testing}
+
+    ## Questions
+
+    GitHub Url: https://github.com/${answers.gitHub}
     
-    List your collaborators, if any, with links to their GitHub profiles.
-    
-    If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-    
-    If you followed tutorials, include links to those here as well.
-    
-    ## Links
-    
-    ${answers.gitHub}
+    Please Contact me via email only.
+    Email Address: ${answers.email}
 
     ## License
     
-    The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-    
-    ---
-    
-    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+    NOTICE:
+    This project is covered under an ${answers.license} License. Please refer to license section to review permissions.
     
     ## Badges
     
-    ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+    ![README-Generator](https://img.shields.io/github/license/PMengler/README-Generator)
     
-    Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-    
-    ## Features
-    
-    {answers.features}`
+    Check out the badges hosted by [shields.io](https://shields.io/).
+   `
 };
 
 // TODO: Create a function to initialize app

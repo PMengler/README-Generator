@@ -1,72 +1,58 @@
-# title
+# My Dynamic README Generator
 
     ## Description
-    
-    project
-    Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-    
-    - What was your motivation?
-    - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-    - What problem does it solve?
-    - What did you learn?
 
-    ## Technology Used
+    Description
 
-    tech
-    
-    ## User Story
+    ## Table of Contents
 
-    user story
-
-    ## Acceptance Criteria
-
-    criteria
+    - Installation
+    - Usage
+    - Contributing
+    - Tests
+    - Questions
+    - License
 
     ## Installation
-    
-    {answers.installation}
-    What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-    
+
+    Open the index.js file in an integrated terminal. Make sure you have run npm init -y, npm i, and have inquirer version 8.2.4 installed. then simple run node index.js and answer the prompts
+
     ## Usage
-    
-    instructions
+
+    partially answered in the installation section. Once you have the environment running, run node index.js in vscode and answer the prompts.
 
     Provide instructions and examples for use. Include screenshots as needed.
-    
-    To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    
-        md
-        ![alt text](img link)
-    
-    ## Credits
-    
-    {answers.credits};
 
-    
-    List your collaborators, if any, with links to their GitHub profiles.
-    
-    If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-    
-    If you followed tutorials, include links to those here as well.
-    
-    ## Links
-    
-    github link
+    To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+
+        md
+        ![alt text](img)
+
+        video
+
+    ## Contributing
+
+    Only people that I allow to.
+
+
+    ## Testing
+
+    testing
+
+    ## Questions
+
+    GitHub Url: https://github.com/undefined
+
+    Please Contact me via email only.
+    Email Address: undefined
 
     ## License
-    
-    The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-    
-    ---
-    
-    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-    
+
+    NOTICE:
+    This project is covered under an MIT License. Please refer to license section to review permissions.
+
     ## Badges
-    
-    ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-    
-    Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-    
-    ## Features
-    
-    {answers.features}
+
+    ![README-Generator](https://img.shields.io/github/license/PMengler/README-Generator)
+
+    Check out the badges hosted by [shields.io](https://shields.io/).

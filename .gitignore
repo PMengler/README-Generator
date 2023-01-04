@@ -16,6 +16,9 @@
 # package-lock.json
 /package-lock.json
 
+# DS Store
+*.DS_Store
+
 # Package Files #
 *.jar
 *.war
