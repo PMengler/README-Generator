@@ -1,58 +1,52 @@
 # My Dynamic README Generator
 
-    ## Description
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-    Description
+## Description
 
-    ## Table of Contents
+Description
 
-    - Installation
-    - Usage
-    - Contributing
-    - Tests
-    - Questions
-    - License
+## Table of Contents
 
-    ## Installation
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
+- [License](#License)
 
-    Open the index.js file in an integrated terminal. Make sure you have run npm init -y, npm i, and have inquirer version 8.2.4 installed. then simple run node index.js and answer the prompts
+## Installation
 
-    ## Usage
+Run npm i
 
-    partially answered in the installation section. Once you have the environment running, run node index.js in vscode and answer the prompts.
+## Usage
 
-    Provide instructions and examples for use. Include screenshots as needed.
+Answer the Questions in the terminal!
 
-    To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-        md
-        ![alt text](img)
+    md
+    ![alt text](img)
 
-        video
+## Contributing
 
-    ## Contributing
+Nobody
 
-    Only people that I allow to.
+## Testing
 
+N/A
 
-    ## Testing
+## Questions
 
-    testing
+GitHub Url: https://github.com/PMengler
 
-    ## Questions
+Please Contact me via email only.
 
-    GitHub Url: https://github.com/undefined
+Email Address: patrickraymengler927@gmail.com
 
-    Please Contact me via email only.
-    Email Address: undefined
+## License
 
-    ## License
+NOTICE:
+This project is covered under an MIT License. Please refer to license section to review permissions.
 
-    NOTICE:
-    This project is covered under an MIT License. Please refer to license section to review permissions.
-
-    ## Badges
-
-    ![README-Generator](https://img.shields.io/github/license/PMengler/README-Generator)
-
-    Check out the badges hosted by [shields.io](https://shields.io/).
+- [License](#license)
