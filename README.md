@@ -1,4 +1,4 @@
-# My Dynamic README Generator
+# My README Generator
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -8,25 +8,25 @@ Description
 
 ## Table of Contents
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
-- [License](#License)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [Questions](#questions)
+- [License](#license)
 
 ## Installation
 
-Run npm i
+In order to run the applicaton, run the following command in the integrated terminal:
+
+    npm i
 
 ## Usage
 
-Answer the Questions in the terminal!
+Answer the questions in the terminal!
 
-To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    md
-    ![alt text](img)
+md
+![alt text](./assets/ScreenShot.jpeg)
 
 ## Contributing
 
@@ -34,7 +34,9 @@ Nobody
 
 ## Testing
 
-N/A
+Testing is not applicable on this project. However, typically you would run the following command in the integrated terminal:
+
+    npm test
 
 ## Questions
 

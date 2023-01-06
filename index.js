@@ -15,7 +15,7 @@ const questions = [
     },
     {   // installation
         type: 'input',
-        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+        message: 'What are the steps required to install your project?',
         name: 'installation',
     },
     {   // usage
@@ -35,12 +35,12 @@ const questions = [
     },
     {   // contributing
         type: 'input',
-        message: 'Who can contribute to this project? How do they go about doing so?',
+        message: 'Who can contribute to this project?',
         name: 'contributing',
     },
     {   // tests
         type: 'input',
-        message: 'What kind of testing did you perform on this project?',
+        message: 'How can you test this application?',
         name: 'testing',
     },
     {   // question for link to github repo
@@ -72,12 +72,12 @@ ${answers.description}
 
 ## Table of Contents
 
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
-* [Questions](#Questions)
-* [License](#License)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Testing](#testing)
+* [Questions](#questions)
+* [License](#license)
 
 ## Installation
 
@@ -89,15 +89,11 @@ In order to run the applicaton, run the following command in the integrated term
 
 ${answers.usage}
 
-To add a screenshot, create an 'assets/images' folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-md
 ![alt text](${answers.screenShot})
 
 ## Contributing
 
 ${answers.contributing}
-
 
 ## Testing
 
